@@ -17,7 +17,12 @@ namespace Guestbook1040516.Controllers
         // GET: Products
         public ActionResult Index()
         {
-            return View(db.Products.ToList());
+
+            //DataSource //1040516
+            var model = new int[] { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+             return View(model);
+
+           // return View(db.Products.ToList());
         }
 
         // GET: Products/Details/5
